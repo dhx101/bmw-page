@@ -53,41 +53,49 @@ table {
   border-spacing: 0;
 }
 
-.header {
+header {
+  background-image: url(../../content/img/bmw-mpp-2022-cp-m2-video.jpg);
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header .header {
   display: flex;
   justify-content: space-between;
   margin: 0 10%;
   height: 100px;
   border-bottom: 3px solid gray;
 }
-.header-nav {
+header .header-nav {
   display: flex;
   height: 100%;
   justify-content: space-evenly;
   align-items: center;
   gap: 25px;
 }
-.header-nav__list {
+header .header-nav__list {
   display: flex;
   height: 100%;
   gap: 25px;
 }
-.header-nav__list__item {
+header .header-nav__list__item {
   display: flex;
   height: 100%;
   align-items: center;
   justify-content: center;
 }
-.header-nav__list__item a {
-  color: black;
+header .header-nav__list__item a {
+  color: white;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
+  font-weight: 700;
   cursor: pointer;
 }
-.header-nav__list__item:hover {
+header .header-nav__list__item:hover {
   border-bottom: 3px solid #007AE9;
 }
-.header-interactive {
+header .header-interactive {
   display: flex;
   height: 100%;
   width: 200px;
@@ -95,16 +103,16 @@ table {
   align-items: center;
   gap: 25px;
 }
-.header-interactive__list {
+header .header-interactive__list {
   display: flex;
   width: 100%;
   height: 100%;
 }
-.header-interactive__list__item {
+header .header-interactive__list__item {
   width: 100%;
   height: 100%;
 }
-.header-interactive__list__item button {
+header .header-interactive__list__item button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,15 +123,51 @@ table {
   border: none;
   cursor: pointer;
 }
-.header-interactive__list__item button img {
-  width: 50%;
+header .header-interactive__list__item button img {
+  width: 75%;
 }
-.header-interactive__list__item:hover {
+header .header-interactive__list__item:hover {
   border-bottom: 3px solid #007AE9;
 }
-.header-interactive__logo {
+header .header-interactive__logo {
   height: 50%;
 }
-.header-interactive__logo__img {
+header .header-interactive__logo__img {
   height: 100%;
+}
+header .background-cta {
+  padding: 10vh 10vw;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+header .background-cta__h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: xxx-large;
+  color: white;
+  text-transform: uppercase;
+}
+header .background-cta__p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: x-large;
+  color: white;
+  text-transform: uppercase;
+}
+header .background-cta__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  width: 20vw;
+  height: 4em;
+  background-color: #007AE9;
+  outline: none;
+  border: none;
+  color: white;
+}
+header .background-cta__button:hover {
+  border: 3px solid black;
 }/*# sourceMappingURL=style.css.map */
