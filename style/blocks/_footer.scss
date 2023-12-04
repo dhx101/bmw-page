@@ -1,0 +1,42 @@
+.footer {
+    display: flex;
+	flex-direction: column;
+	padding: 5vh 0;
+	gap: 10vh;
+    font-family: $font_roboto;
+    &-contact {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #E6E6E6;
+        border-top: 1px solid grey;
+        padding: 10vh 10vw;
+        &__list{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            &__item{
+                text-transform: capitalize;
+                color: grey;
+                &:first-child {
+                    color: black;
+                    font-weight: 700;
+                    padding: 25px 0;
+                }
+            }
+        }
+    }
+    &-terms{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10vw;
+        &__list {
+            display: flex;
+            gap: 20px;
+            a {
+                text-decoration: none;
+
+            }
+        }
+    }
+}

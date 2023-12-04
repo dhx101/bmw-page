@@ -131,10 +131,18 @@ header .header-interactive__list__item:hover {
   border-bottom: 3px solid #007AE9;
 }
 header .header-interactive__logo {
-  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
 }
 header .header-interactive__logo__img {
-  height: 100%;
+  width: 100%;
+}
+header .header-interactive__logo p {
+  color: white;
+  font-weight: 700;
 }
 header .background-cta {
   padding: 10vh 10vw 5vh 10vw;
@@ -178,6 +186,7 @@ main {
   flex-direction: column;
   padding: 5vh 10vw;
   gap: 10vh;
+  font-family: "Roboto", sans-serif;
 }
 main .selection {
   display: flex;
@@ -186,14 +195,12 @@ main .selection {
 }
 main .selection__h3 {
   color: grey;
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: x-large;
   text-decoration: underline;
 }
 main .selection-type__list {
   color: black;
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: xxx-large;
 }
@@ -235,18 +242,19 @@ main .blog-area {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  justify-content: center;
   align-items: flex-start;
   padding: 10px;
   border: 1px solid grey;
-  font-family: "Roboto", sans-serif;
+}
+main .blog-area__img {
+  width: 100%;
 }
 main .blog-area__h4 {
   font-size: x-large;
   font-weight: 700;
 }
-main .blog-area__img {
-  width: 100%;
+main .blog-area__p {
+  max-lines: 4;
 }
 main .blog-area a {
   text-decoration: none;
@@ -266,7 +274,6 @@ main .blog-extra-area {
   align-items: flex-start;
   padding: 10px;
   border: 1px solid grey;
-  font-family: "Roboto", sans-serif;
 }
 main .blog-extra-area__h4 {
   font-size: x-large;
@@ -292,10 +299,51 @@ main .configuration-area {
   justify-content: center;
   align-items: center;
   padding: 25px;
-  font-family: "Roboto", sans-serif;
   color: white;
-  background-color: grey;
+  background-color: #E6E6E6;
 }
 main .configuration-area__img {
   width: 50px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 5vh 0;
+  gap: 10vh;
+  font-family: "Roboto", sans-serif;
+}
+.footer-contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #E6E6E6;
+  border-top: 1px solid grey;
+  padding: 10vh 10vw;
+}
+.footer-contact__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-contact__list__item {
+  text-transform: capitalize;
+  color: grey;
+}
+.footer-contact__list__item:first-child {
+  color: black;
+  font-weight: 700;
+  padding: 25px 0;
+}
+.footer-terms {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10vw;
+}
+.footer-terms__list {
+  display: flex;
+  gap: 20px;
+}
+.footer-terms__list a {
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

@@ -3,20 +3,19 @@ main {
 	flex-direction: column;
 	padding: 5vh 10vw;
 	gap: 10vh;
+	font-family: $font_roboto;
 	.selection {
 		display: flex;
 		flex-direction: column;
 		gap: 25px;
 		&__h3 {
 			color: grey;
-			font-family: $font_roboto;
 			font-weight: 700;
 			font-size: x-large;
 			text-decoration: underline;
 		}
 		&-type__list {
 			color: black;
-			font-family: $font_roboto;
 			font-weight: 700;
 			font-size: xxx-large;
 			&__item {
@@ -61,17 +60,18 @@ main {
 			display: flex;
 			flex-direction: column;
 			gap: 10px;
-			justify-content: center;
 			align-items: flex-start;
 			padding: 10px;
 			border: 1px solid grey;
-			font-family: $font_roboto;
+			&__img {
+				width: 100%;
+			}
 			&__h4 {
 				font-size: x-large;
 				font-weight: 700;
 			}
-			&__img {
-				width: 100%;
+			&__p {
+				max-lines: 4;
 			}
 			a {
 				text-decoration: none;
@@ -92,7 +92,6 @@ main {
 			align-items: flex-start;
 			padding: 10px;
 			border: 1px solid grey;
-			font-family: $font_roboto;
 			&__h4 {
 				font-size: x-large;
 				font-weight: 700;
@@ -118,9 +117,8 @@ main {
 			justify-content: center;
 			align-items: center;
 			padding: 25px;
-			font-family: $font_roboto;
             color: white;
-            background-color: grey;
+            background-color: #E6E6E6;
             &__img{
                 width: 50px;
             }
